@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Bible App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tablist">
+        <h1 class="page-title">My Bible App</h1>
+        <button class="active homeBtn nav-btn">
+          <span class="material-symbols-outlined">home</span> Home
+        </button>
+        <button class="bibleBtn nav-btn">
+          <span class="material-symbols-outlined">book_4</span> Bible
+        </button>
+        <button class="accountBtn nav-btn">
+          <span class="material-symbols-outlined">person</span> Account
+        </button>
+        <button class="settingsBtn nav-btn">
+          <span class="material-symbols-outlined">settings</span> Settings
+        </button>
+      </div>
+      <div class="home-tab tab-container" style="display: none">
+        <h1 class="welcome-page-title">
+          Welcome back, would you like to get back to it.
+          <button class="bibleBtn btn">Bible</button>
+        </h1>
+        <div class="welcome-cards">
+          <div class="welcome-card">
+            <p class="reference-info">
+              <span class="reference-book"></span>
+              (<span class="reference-chapter-number"></span>:
+              <span class="reference-verse-number"></span>)
+            </p>
+            <p class="card-reference-verse"></p>
+          </div>
+        </div>
+      </div>
+      <div class="bible-tab tab-container">
+        <div class="bible-controls">
+          <div class="book-section">
+            <button class="nav-btn">
+              <span class="previousBook material-symbols-outlined">arrow_back</span>
+            </button>
+            <div class="bookInput">
+              <div class="bookSel">Genesis</div>
+              <div class="bookDropDown"></div>
+            </div>
+            <button class="nextBook nav-btn">
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+          <div class="main-bible-body">
+            <div class="sidepanel">
+              <div class="chapter-sec">
+                <h1 class="section-title">Chapter</h1>
+                <div class="chapter-section">
+                  <button class="nav-btn">
+                    <span class="previousChapter material-symbols-outlined">arrow_back</span>
+                  </button>
+                  <div class="scriptureInput">
+                    <div class="chapterSel">1</div>
+                  </div>
+                  <button class="nextChapter nav-btn">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </button>
+                </div>
+                <div class="chapterList">
+                  <button class="chapterNumBtn scrBtn">1</button>
+                </div>
+              </div>
+              <div class="verse-sec">
+                <h1 class="section-title">Verse</h1>
+                <div class="verse-section">
+                  <button class="nav-btn">
+                    <span class="previousVerse material-symbols-outlined">arrow_back</span>
+                  </button>
+                  <div class="scriptureInput">
+                    <div class="verseSel">1</div>
+                  </div>
+                  <button class="nextVerse nav-btn">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </button>
+                </div>
+                <div class="verseList">
+                  <button class="scrBtn">1</button>
+                </div>
+              </div>
+            </div>
+            <div class="bible">Mary</div>
+          </div>
+        </div>
+      </div>
+      <div class="account-tab tab-container" style="display: none">
+        ACCOUNT TAB
+      </div>
+      <div class="settings-tab tab-container" style="display: none">
+        SETTINGS TAB
+      </div>
+    </div>
+
+    <script src="js/program.js"></script>
+  </body>
+</html>
